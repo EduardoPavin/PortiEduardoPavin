@@ -1,0 +1,128 @@
+<html>
+    <html>
+        <head>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    background: linear-gradient(to right, #777777, #ffffff);
+                }
+        
+                header {
+                    display: flex;
+                    justify-content: space-between; /* Adicionado para alinhar o título e o botão nos extremos */
+                    background-color: #000000;
+                    color: #ffffff;
+                    padding: 20px;
+                }
+        
+                h1 {
+                    text-align: left;
+                    margin: 0;
+                }
+        
+                .content {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 20px;
+                    max-width: 800px;
+                    margin: 20px auto;
+                }
+        
+                .image-container {
+                    position: relative;
+                    overflow: hidden;
+                }
+        
+                .image-container img {
+                    max-width: 100%;
+                    display: block;
+                }
+        
+                .image-title {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    color: #ffffff;
+                    padding: 10px;
+                    width: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
+                }
+        
+                .image-container:hover .image-title {
+                    opacity: 1;
+                }
+        
+                .text {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    display: flex;
+                    align-items: center;
+                }
+        
+                .text p {
+                    max-height: 100%;
+                    overflow: hidden;
+                }
+        
+                .footer {
+                    background-color: #000000;
+                    color: #ffffff;
+                    padding: 20px;
+                    text-align: center;
+                }
+        
+                .social-button {
+                    background-color: #ffffff;
+                    color: #000000;
+                    padding: 10px 20px;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+        
+                .social-button:hover {
+                    background-color: #dddddd;
+                }
+            </style>
+        </head>
+<body>
+    <header>
+        <h1>Portfólio Eduardo Augusto Camacho d'Oliveira Pavin</h1>
+        <a href="https://exemplo.com/redes-sociais" class="social-button">Redes Sociais</a>
+    </header>
+
+    <div class="content">
+        <div class="image-container">
+                <img src="Imagens/Capijogo.png">
+                <div class="image-title">Jogo Capivara</div>
+            </a>
+        </div>
+        <div class="image-container">
+                <img src="Imagens/Agudos.png">
+                <div class="image-title">Site Agudos do Sul</div>
+            </a>
+        </div>
+        <div class="image-container">
+                <img src="Imagens/PPT.png">
+                <div class="image-title">Pedra Papel Tesoura Python</div>
+            </a>
+        </div>
+        <div class="image-container">
+                <img src="Imagens/MaquinaVendas.png">
+                <div class="image-title">Máquina de Vendas</div>
+            </a>
+        </div>
+        <div class="text">
+            <p>Bem-vindo ao meu portfólio! Sou Eduardo Pavin, estudante de Ciência da Computação na PUCPR. Neste espaço, compartilho meu trabalho e projetos realizados durante meu primeiro semestre. Explore meu portfólio e entre em contato para discutir oportunidades de parceria. Obrigado pela visita!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Eduardo Augusto Camacho d'Oliveira Pavin
+    </div>
+</body>
+</html>
